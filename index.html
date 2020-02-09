@@ -60,7 +60,7 @@ h(Math,"acosh",Cr.acosh,Math.acosh(Number.MAX_VALUE)===Infinity);h(Math,"acosh",
 /*
  * jQuery throttle / debounce - v1.1 - 3/7/2010
  * http://benalman.com/projects/jquery-throttle-debounce-plugin/
- * 
+ *
  * Copyright (c) 2010 "Cowboy" Ben Alman
  * Dual licensed under the MIT and GPL licenses.
  * http://benalman.com/about/license/
@@ -100,9 +100,19 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Great Story, Dad" startnode="1" creator="Twine" creator-version="2.3.5" ifid="940D9085-F7BD-4776-8CF6-0636FE7C41A1" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body {
-	color: #ffff00;
-	background-color: #000080;
+	<tw-storydata name="Great Story, Dad" startnode="1" creator="Twine" creator-version="2.3.5" ifid="940D9085-F7BD-4776-8CF6-0636FE7C41A1" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+@import url('https://fonts.googleapis.com/css?family=Lato|Work+Sans&display=swap');
+
+
+body, tw-story
+{
+  font-family: Lato;
+  font-size: 18px;
+}
+
+body {
+	color: yellow;
+	background-color: blue;
 }
 a {color: red}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start " tags="" position="434,199.5" size="100,100">Welcome to my game.
 Go to the [[Castle]].</tw-passagedata><tw-passagedata pid="2" name="Castle" tags="" position="434,349.5" size="100,100">This castle has turrets and a moat. Maybe even a dragon.
@@ -110,11 +120,13 @@ Go to the [[Castle]].</tw-passagedata><tw-passagedata pid="2" name="Castle" tags
 [[Swim the moat]]</tw-passagedata><tw-passagedata pid="3" name="Scale the wall" tags="" position="359,499.5" size="100,100">[[Go to the castle-&gt;https://en.wikipedia.org/wiki/C%C4%93sis_Castle#/media/File:CesuPils_2017-09-10.jpg]]
 
 Clicking this link will take you to //another// website.</tw-passagedata><tw-passagedata pid="4" name="Swim the moat" tags="" position="509,499.5" size="100,100">[[Get eaten by crocodile-&gt;Croc]]
-[[Make it safely across-&gt;Gate]]</tw-passagedata><tw-passagedata pid="5" name="Croc" tags="" position="434,649.5" size="100,100">[img[https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Crocodile_de_Morelet.jpeg/1200px-Crocodile_de_Morelet.jpeg]]</tw-passagedata><tw-passagedata pid="6" name="Gate" tags="" position="584,649.5" size="100,100">&lt;&lt;silently&gt;&gt; 
-&lt;&lt;set $havepassword = &quot;no&quot;&gt;&gt; 
-&lt;&lt;endsilently&gt;&gt; 
+[[Make it safely across-&gt;Gate]]</tw-passagedata><tw-passagedata pid="5" name="Croc" tags="" position="434,649.5" size="100,100">[img[https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Crocodile_de_Morelet.jpeg/1200px-Crocodile_de_Morelet.jpeg]]
 
-&lt;&lt;if $havepassword == &quot;no&quot;&gt;&gt;The guard ignores you.&lt;&lt;else&gt;&gt;The guard spots you, and draws his sword...&lt;&lt;endif&gt;&gt; 
+[img[images/crocodile.jpg]]</tw-passagedata><tw-passagedata pid="6" name="Gate" tags="" position="584,649.5" size="100,100">&lt;&lt;silently&gt;&gt;
+&lt;&lt;set $havepassword = &quot;no&quot;&gt;&gt;
+&lt;&lt;endsilently&gt;&gt;
+
+&lt;&lt;if $havepassword == &quot;no&quot;&gt;&gt;The guard ignores you.&lt;&lt;else&gt;&gt;The guard spots you, and draws his sword...&lt;&lt;endif&gt;&gt;
 
 </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
